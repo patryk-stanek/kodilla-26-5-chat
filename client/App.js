@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import io from 'socket.io-client';
 
-import styles from './App.css';
+import styles from './_styles.scss';
 
 import MessageForm from './MessageForm';
 import MessageList from './MessageList';
@@ -56,19 +56,19 @@ class App extends Component {
     renderLayout() {
         return (
            <div className={styles.App}>
-                <div className={styles.AppHeader}>
-                    <div className={styles.AppTitle}>
+                <div className={styles.App__Header}>
+                    <div className={styles.App__Title}>
                         ChatApp
                     </div>
-                    <div className={styles.AppRoom}>
+                    <div className={styles.App__Room}>
                         App room
                     </div>
                 </div>
-                <div className={styles.AppBody}>
+                <div className={styles.App__Body}>
                     <UsersList
                         users={this.state.users}
                     />
-                    <div className={styles.MessageWrapper}>
+                    <div className={styles.App__Message}>
                         <MessageList
                             messages={this.state.messages}
                         />

@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background-image: linear-gradient(to bottom right, $color-primary, $color-secondary);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    // height: 100vh;
+    width: 100%;
+    height: 100%;
+
+    max-width: 900px;
+    max-height: 500px;
+
+    width: 900px;
+    height: 500px;
+    border-radius: 4px;
+
+    background-color: white;
+
+    &__Header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__Title {
+        display: flex;
+        // width: 25vw;
+        border-right: 1px solid #ccc;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 20px;
+
+        width: 25%;
+        font-size: 50px;
+        padding: 0;
+        color: $color-primary;
+        font-family: $font-primary;
+        font-weight: 100;
+    }
+
+    &__Room {
+        display: flex;
+        width: 75vw;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 20px;
+
+        border: 1px solid blue;
+        width: 75%;
+    }
+
+    &__Body {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    &__Message {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        flex: 1;
+
+        border: 1px solid blue;
+    }
+}
+

@@ -1,10 +1,12 @@
 .Users {
     display: flex;
-    flex: 1;
-    width: 25vw;
+    // flex: 1;
+    // width: 25vw;
     justify-content: flex-start;
     flex-direction: column;
     border-right: 1px solid #ccc;
+
+    width: 25%;
 }
 
 .UsersOnline {

@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap);
+
+//VAR
+
+$color-primary: #58698F;
+$color-secondary: #1E1618;
+
+$font-primary: 'Lato', sans-serif;
+
+//IMPORT
+
+@import "styles/App";
+@import "styles/MessageForm";
+@import "styles/MessageList";
+@import "styles/UserForm";
+@import "styles/UsersList";
