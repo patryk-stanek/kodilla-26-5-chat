@@ -54,7 +54,7 @@ module.exports = (env) => {
         },
         plugins,
         devServer: {
-          proxy: {
+            proxy: {
                 '/socket.io': {
                     target: 'http://localhost:3000',
                     ws: true
