@@ -1,28 +1,39 @@
 .Users {
     display: flex;
-    // flex: 1;
-    // width: 25vw;
     justify-content: flex-start;
     flex-direction: column;
     border-right: 1px solid #ccc;
 
     width: 25%;
-}
 
-.UsersOnline {
-    padding: 20px;
-    text-align: center;
-    background: #ccc;
-}
+    &__Online {
+        padding: 10px;
+        text-align: center;
+        background-color: $color-4;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        color: $white;
+    }
 
-.UsersList {
-    margin: 0;
-    padding: 0;
-}
+    &__List {
+        margin: 0;
+        padding: 0;
+    }
 
-.UserItem {
-    list-style: none;
-    border-bottom: 1px solid #ccc;
-    padding: 20px;
-    margin: 0 0 0 20px;
+    &__Item {
+        list-style: none;
+        display: flex;
+        font-family: $font-primary;
+        margin: 5px;
+        padding: 5px;
+        border-bottom: 1px solid $color-4;
+        cursor: pointer;
+        transition: .2s all ease-out;
+
+        &:hover,
+        &:active {
+            background-color: rgba($color-4, .2);
+        }
+
+    }
 }

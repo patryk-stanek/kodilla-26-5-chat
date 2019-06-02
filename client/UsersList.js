@@ -4,14 +4,14 @@ import styles from './_styles.scss';
 
 const UsersList = props => (
     <div className={styles.Users}>
-        <div className={styles.UsersOnline}>
+        <div className={styles.Users__Online}>
             {props.users.length} people online
         </div>
-        <ul className={styles.UsersList}>
+        <ul className={styles.Users__List}>
             {
                 props.users.map((user) => {
                     return (
-                        <li key={user.id} className={styles.UserItem}>
+                        <li key={user.id} className={styles.Users__Item}>
                             {user.name}
                         </li>
                     );

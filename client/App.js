@@ -61,7 +61,7 @@ class App extends Component {
                         ChatApp
                     </div>
                     <div className={styles.App__Room}>
-                        App room
+                        /room
                     </div>
                 </div>
                 <div className={styles.App__Body}>

@@ -4,8 +4,8 @@ import styles from './_styles.scss';
 
 const Message = props => (
     <div className={styles.Message}>
-        <strong>{props.from} :</strong>
-        <span>{props.text}</span>
+        <strong className={styles.Message__Author}>{props.from}: </strong>
+        <span className={styles.Message__Text}>{props.text}</span>
     </div>
 );
 

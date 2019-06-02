@@ -1,11 +1,18 @@
-.MessageForm {
+.Message {
     display: flex;
     flex-direction: row;
-}
+    padding: 0;
 
-.MessageInput {
-    flex: 1;
-    padding: 20px;
-    border: 0;
-    border-top: 1px solid #ccc;
+    &__Input {
+        flex: 1;
+        padding: 10px;
+        border: 0;
+        border-top: 1px solid $grey;
+        font-family: $font-primary;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
